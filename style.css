@@ -30,3 +30,27 @@ footer{text-align:center;color:#686b72;font-size:9px;letter-spacing:.12em;margin
 .contact-row{display:flex;flex-direction:column;gap:5px;padding:13px 0;border-top:1px solid #34363c;font-size:12px}.contact-row span{color:var(--muted)}.contact-row strong{font-size:13px}.vk-link{display:inline-block;color:var(--accent);margin-top:15px;font-weight:700;font-size:13px;text-decoration:none}
 @media(min-width:600px){.app{padding:30px 28px}.direction-card{height:245px}.direction-copy{inset:auto 18px 17px}.direction-copy h2{font-size:24px}}
 @media(max-width:370px){.direction-card{height:180px}.direction-copy h2{font-size:17px}.city{max-width:90px}}
+/* Блок платных услуг */
+.paid-content{display:grid;gap:14px}
+.paid-intro{margin:0 0 2px}
+.paid-services{display:grid;gap:10px}
+.paid-service-card{padding:14px;border:1px solid #34363c;border-radius:13px;background:#22242a}
+.paid-service-card h3{font-size:15px;line-height:1.25;margin:0 0 10px}
+.paid-group{padding-top:9px;margin-top:9px;border-top:1px solid #393b42}
+.paid-group:first-child{padding-top:0;margin-top:0;border-top:0}
+.paid-group-title{font-size:11px;color:var(--muted);margin-bottom:6px}
+.paid-price-list{display:grid;gap:8px}
+.paid-price-row{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;font-size:12px}
+.paid-price-row span{color:#c4c5c8}
+.paid-price-row strong{white-space:nowrap;font-size:13px}
+.paid-description{margin:0 0 5px!important;font-size:11px!important}
+.paid-single-price{font-size:18px;font-weight:800;color:var(--accent)}
+.paid-discounts{border:1px solid #34363c;border-radius:13px;overflow:hidden}
+.paid-discounts h3{font-size:14px;margin:0;padding:13px;background:#25272d}
+.paid-discount-row{display:grid;grid-template-columns:54px 1fr;gap:10px;padding:10px 12px;border-top:1px solid #34363c;font-size:10px;line-height:1.45}
+.paid-discount-row strong{font-size:13px;color:var(--accent)}
+.paid-discount-row span{color:#c4c5c8}
+.paid-contact{padding:12px 0;border-top:1px solid #34363c;display:flex;flex-direction:column;gap:6px;font-size:11px}
+.paid-contact span{color:var(--muted)}
+.paid-contact strong{font-size:13px}
+.paid-contact a{color:#fff;text-decoration:none}
