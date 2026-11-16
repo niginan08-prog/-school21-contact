@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101114">
+  <title>СШ «Контакт» — Новый Уренгой</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://st.max.ru/js/max-web-app.js"></script>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <img class="logo" src="assets/logo.png" alt="Логотип СШ Контакт">
+        <div><span class="eyebrow">МАУ ДО</span><strong>СШ «КОНТАКТ»</strong></div>
+      </div>
+      <span class="city">НОВЫЙ УРЕНГОЙ</span>
+    </header>
+
+    <section class="intro">
+      <p class="eyebrow accent">СПОРТ НАЧИНАЕТСЯ ЗДЕСЬ</p>
+      <h1>Здравствуйте<span id="user-name"></span>!</h1>
+      <p class="lead">Добро пожаловать в спортивную школу «Контакт».</p>
+      <p class="description">Помогаем детям развиваться, заниматься спортом и достигать новых высот.</p>
+    </section>
+
+    <section class="directions">
+      <div class="section-heading"><span class="eyebrow">НАШИ НАПРАВЛЕНИЯ</span><span class="line"></span></div>
+      <div id="direction-list" class="direction-list"></div>
+    </section>
+
+    <section class="quick-links">
+      <button class="action-card" data-panel="paid"><span class="action-icon">₽</span><span><b>Платная деятельность</b><small>Оплата и дополнительная информация</small></span><i>↗</i></button>
+      <button class="action-card" data-panel="contacts"><span class="action-icon">↗</span><span><b>Контакты</b><small>Адрес и способы связи</small></span><i>↗</i></button>
+    </section>
+
+    <footer>МАУ ДО СШ «КОНТАКТ» <span>•</span> НОВЫЙ УРЕНГОЙ</footer>
+  </main>
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <section class="panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+      <button class="close" id="close-panel" aria-label="Закрыть">×</button>
+      <p class="eyebrow accent">СШ «КОНТАКТ»</p>
+      <h2 id="panel-title"></h2>
+      <div id="panel-content"></div>
+    </section>
+  </div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
