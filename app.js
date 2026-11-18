@@ -89,6 +89,13 @@ function openDirection(index) {
 function renderPaid(data) {
   const cards = (data.services || []).map(service => {
     let details = "";
+    const schedule = service.schedule ? `
+      <div class="paid-schedule">
+        <div class="paid-schedule-label">📅 Расписание</div>
+        <strong>${safeText(service.schedule[0])}</strong>
+        <div class="paid-schedule-times">${service.schedule.slice(1).map(time => `<span>${safeText(time)}</span>`).join("")}</div>
+      </div>
+    ` : "";
 
     if (service.groups) {
       details = service.groups.map(group => `
@@ -120,7 +127,7 @@ function renderPaid(data) {
       `;
     }
 
-    return `<article class="paid-service-card"><h3>${safeText(service.title)}</h3>${details}</article>`;
+    return `<article class="paid-service-card"><h3>${safeText(service.title)}</h3>${schedule}${details}</article>`;
   }).join("");
 
   const discounts = (data.discounts || []).map(d => `
